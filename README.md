@@ -1,4 +1,4 @@
-# Building Azure_Analysis_Model using On-PREM SQL SERVER 
+# Building Azure_Analysis_Model using On-PREM SQL SERVER, ADF and Azure SQL DB
 
 Project Details: The Azure Analysis model is developed using on-prem sql server tables. for ETL, ADF has been used to extract tables and data from the on-prem sql server and load them into ADLS Gen2. From storage containers, ADF pipeline is used to load the data into Azure SQL DB. Azure Analysis model is created by using Azure SQL DB tables as source and the model is processed. Once model processing was completed, the model was connected via Excel, PowerBI, and Visual Studio for further analysis and reporting purposes
 
