@@ -1,0 +1,43 @@
+{
+	"name": "PL_Master_Pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "On_Prem_SQL_Server_to_ADLS_Gen2",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "PL_On_Prem_to_ADLS_Gen2",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "ADLS_Gen_2_Azure_SQL_DB",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "On_Prem_SQL_Server_to_ADLS_Gen2",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "ADLS_Gen2_To_Azure_SQL_DB",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-09-30T16:32:24Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

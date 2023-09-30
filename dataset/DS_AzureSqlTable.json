@@ -1,0 +1,25 @@
+{
+	"name": "DS_AzureSqlTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Azure_SQL_Server",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "AZURE_DWH",
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
