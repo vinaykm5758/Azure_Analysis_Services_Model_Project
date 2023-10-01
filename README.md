@@ -5,18 +5,23 @@ The Azure Analysis model is developed using on-prem sql server tables. for ETL, 
 
 Details steps are included below for processing the data from on-prem until the reporting end
 
+**Tables List:**
+
+1. SalesOrderDetail
+2. SalesOrderHeader
+3. ProductModelProductDescription
+4. ProductModel
+5. ProductDescription
+6. ProductCategory
+7. Product
+8. CustomerAddress
+9. Customer
+10. Address
+
+
 **Step:1**
 Using Self-Hosted IR, connect to the On-prem SQL Server and extract the below tables to ADLS
-        SalesOrderDetail
-        SalesOrderHeader
-        ProductModelProductDescription
-        ProductModel
-        ProductDescription
-        ProductCategory
-        Product
-        CustomerAddress
-        Customer
-        Address
+
 
 ADF Pipeline GIT Repo: https://github.com/vinaykm5758/On_Prem_SQL_Server_Azure_Analysis_Model/tree/Azure_Data_Factory_Pipeline
 Pipeline name: PL_On_Prem_to_ADLS_Gen2
