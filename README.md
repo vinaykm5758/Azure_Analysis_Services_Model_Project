@@ -59,6 +59,9 @@ Once, table extractions are completed and the corresponding ER has been establis
 
 **Step:4**  Go to the Analysis model, check for your model, and then click on open on Excel
 
+![image](https://github.com/vinaykm5758/Azure_Analysis_Services_Model_Project/assets/45409524/8306f618-a083-4ba3-a4ea-861175fa5107)
+
+
 Excel sheet connection to Analysis Model: https://github.com/vinaykm5758/On_Prem_SQL_Server_Azure_Analysis_Model/blob/main/Azure_Tabular_Model_Analysis_Report.xlsx
 
 ![image](https://github.com/vinaykm5758/On_Prem_SQL_Server_Azure_Analysis_Model/assets/45409524/0809d5af-b99d-4a12-9900-e3d4193b200f)
